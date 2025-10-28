@@ -11,7 +11,7 @@ export default function App() {
   });
 
   const load = async () => {
-    const res = await api.get('http://localhost:4000/api/employees');
+    const res = await api.get('/employees');
     setEmployees(res.data);
   };
 

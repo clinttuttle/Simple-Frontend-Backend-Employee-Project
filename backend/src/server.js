@@ -1,10 +1,10 @@
 import 'dotenv/config';                 // loads .env locally; no harm in Azure
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import { Sequelize, DataTypes } from 'sequelize';
 
 const app = express();
-app.use(cors());                        // minimal; allows all origins
+//app.use(cors());                        // minimal; allows all origins
 
 app.use(express.json());
 
